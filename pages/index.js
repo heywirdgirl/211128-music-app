@@ -1,17 +1,20 @@
-import { getAllEvents } from '../helpers/api-util';
-import EventList from '../components/events/event-list';
+import { getData } from '../helpers/api-util';
+import ShowLists from '../components/show-lists/show-lists';
 
 function HomePage(props) {
-  console.log(props.events)
+  const data=props.events;
+  const c=data[0];
+  const g=data[1];
   return (
-    <div>
-      test
-    </div>
+    <>
+        <ShowLists lists={g} />
+        <ShowLists lists={c} />
+    </>
   );
 }
 
 export async function getStaticProps() {
-  const featuredEvents = await getAllEvents();
+  const featuredEvents = await getData();
 
   return {
     props: {
@@ -22,3 +25,5 @@ export async function getStaticProps() {
 }
 
 export default HomePage;
+
+
