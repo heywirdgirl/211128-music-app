@@ -1,4 +1,4 @@
-const DUMMY_EVENTS = [
+const ListDemo = [
   {
     key: 1,
     id: '580442939',
@@ -17,286 +17,385 @@ const DUMMY_EVENTS = [
   }
 ];
 
-const global_genres = [
+const global_genres =[
   [
     {
       key: 1,
       id: 'DE',
       listid: 'ip-country-chart-DE',
-      name: 'Germany'
+      name: 'Germany',
+      author: 'shazam.com'
     },
-    { key: 2, id: 'TW', listid: 'ip-country-chart-TW', name: 'Taiwan' },
+    {
+      key: 2,
+      id: 'TW',
+      listid: 'ip-country-chart-TW',
+      name: 'Taiwan',
+      author: 'shazam.com'
+    },
     {
       key: 3,
       id: 'PT',
       listid: 'ip-country-chart-PT',
-      name: 'Portugal'
+      name: 'Portugal',
+      author: 'shazam.com'
     },
     {
       key: 4,
       id: 'DK',
       listid: 'ip-country-chart-DK',
-      name: 'Denmark'
+      name: 'Denmark',
+      author: 'shazam.com'
     },
     {
       key: 5,
       id: 'HR',
       listid: 'ip-country-chart-HR',
-      name: 'Croatia'
+      name: 'Croatia',
+      author: 'shazam.com'
     },
     {
       key: 6,
       id: 'UA',
       listid: 'ip-country-chart-UA',
-      name: 'Ukraine'
+      name: 'Ukraine',
+      author: 'shazam.com'
     },
     {
       key: 7,
       id: 'HU',
       listid: 'ip-country-chart-HU',
-      name: 'Hungary'
+      name: 'Hungary',
+      author: 'shazam.com'
     },
     {
       key: 8,
       id: 'MA',
       listid: 'ip-country-chart-MA',
-      name: 'Morocco'
+      name: 'Morocco',
+      author: 'shazam.com'
     },
     {
       key: 9,
       id: 'ID',
       listid: 'ip-country-chart-ID',
-      name: 'Indonesia'
+      name: 'Indonesia',
+      author: 'shazam.com'
     },
     {
       key: 10,
       id: 'IE',
       listid: 'ip-country-chart-IE',
-      name: 'Ireland'
+      name: 'Ireland',
+      author: 'shazam.com'
     },
     {
       key: 11,
       id: 'US',
       listid: 'ip-country-chart-US',
-      name: 'United States'
+      name: 'United States',
+      author: 'shazam.com'
     },
-    { key: 12, id: 'EG', listid: 'ip-country-chart-EG', name: 'Egypt' },
+    {
+      key: 12,
+      id: 'EG',
+      listid: 'ip-country-chart-EG',
+      name: 'Egypt',
+      author: 'shazam.com'
+    },
     {
       key: 13,
       id: 'IL',
       listid: 'ip-country-chart-IL',
-      name: 'Israel'
+      name: 'Israel',
+      author: 'shazam.com'
     },
     {
       key: 14,
       id: 'UY',
       listid: 'ip-country-chart-UY',
-      name: 'Uruguay'
+      name: 'Uruguay',
+      author: 'shazam.com'
     },
-    { key: 15, id: 'IN', listid: 'ip-country-chart-IN', name: 'India' },
+    {
+      key: 15,
+      id: 'IN',
+      listid: 'ip-country-chart-IN',
+      name: 'India',
+      author: 'shazam.com'
+    },
     {
       key: 16,
       id: 'ZA',
       listid: 'ip-country-chart-ZA',
-      name: 'South Africa'
+      name: 'South Africa',
+      author: 'shazam.com'
     },
-    { key: 17, id: 'IT', listid: 'ip-country-chart-IT', name: 'Italy' },
+    {
+      key: 17,
+      id: 'IT',
+      listid: 'ip-country-chart-IT',
+      name: 'Italy',
+      author: 'shazam.com'
+    },
     {
       key: 18,
       id: 'MX',
       listid: 'ip-country-chart-MX',
-      name: 'Mexico'
+      name: 'Mexico',
+      author: 'shazam.com'
     },
     {
       key: 19,
       id: 'MY',
       listid: 'ip-country-chart-MY',
-      name: 'Malaysia'
+      name: 'Malaysia',
+      author: 'shazam.com'
     },
-    { key: 20, id: 'ES', listid: 'ip-country-chart-ES', name: 'Spain' },
+    {
+      key: 20,
+      id: 'ES',
+      listid: 'ip-country-chart-ES',
+      name: 'Spain',
+      author: 'shazam.com'
+    },
     {
       key: 21,
       id: 'VE',
       listid: 'ip-country-chart-VE',
-      name: 'Venezuela'
+      name: 'Venezuela',
+      author: 'shazam.com'
     },
     {
       key: 22,
       id: 'AR',
       listid: 'ip-country-chart-AR',
-      name: 'Argentina'
+      name: 'Argentina',
+      author: 'shazam.com'
     },
     {
       key: 23,
       id: 'AT',
       listid: 'ip-country-chart-AT',
-      name: 'Austria'
+      name: 'Austria',
+      author: 'shazam.com'
     },
     {
       key: 24,
       id: 'AU',
       listid: 'ip-country-chart-AU',
-      name: 'Australia'
+      name: 'Australia',
+      author: 'shazam.com'
     },
     {
       key: 25,
       id: 'RO',
       listid: 'ip-country-chart-RO',
-      name: 'Romania'
+      name: 'Romania',
+      author: 'shazam.com'
     },
     {
       key: 26,
       id: 'NL',
       listid: 'ip-country-chart-NL',
-      name: 'Netherlands'
+      name: 'Netherlands',
+      author: 'shazam.com'
     },
     {
       key: 27,
       id: 'NO',
       listid: 'ip-country-chart-NO',
-      name: 'Norway'
+      name: 'Norway',
+      author: 'shazam.com'
     },
     {
       key: 28,
       id: 'RU',
       listid: 'ip-country-chart-RU',
-      name: 'Russia'
+      name: 'Russia',
+      author: 'shazam.com'
     },
     {
       key: 29,
       id: 'BE',
       listid: 'ip-country-chart-BE',
-      name: 'Belgium'
+      name: 'Belgium',
+      author: 'shazam.com'
     },
     {
       key: 30,
       id: 'FI',
       listid: 'ip-country-chart-FI',
-      name: 'Finland'
+      name: 'Finland',
+      author: 'shazam.com'
     },
     {
       key: 31,
       id: 'BG',
       listid: 'ip-country-chart-BG',
-      name: 'Bulgaria'
+      name: 'Bulgaria',
+      author: 'shazam.com'
     },
-    { key: 32, id: 'JP', listid: 'ip-country-chart-JP', name: 'Japan' },
+    {
+      key: 32,
+      id: 'JP',
+      listid: 'ip-country-chart-JP',
+      name: 'Japan',
+      author: 'shazam.com'
+    },
     {
       key: 33,
       id: 'FR',
       listid: 'ip-country-chart-FR',
-      name: 'France'
+      name: 'France',
+      author: 'shazam.com'
     },
     {
       key: 34,
       id: 'NZ',
       listid: 'ip-country-chart-NZ',
-      name: 'New Zealand'
+      name: 'New Zealand',
+      author: 'shazam.com'
     },
     {
       key: 35,
       id: 'SA',
       listid: 'ip-country-chart-SA',
-      name: 'Saudi Arabia'
+      name: 'Saudi Arabia',
+      author: 'shazam.com'
     },
     {
       key: 36,
       id: 'BR',
       listid: 'ip-country-chart-BR',
-      name: 'Brazil'
+      name: 'Brazil',
+      author: 'shazam.com'
     },
     {
       key: 37,
       id: 'SE',
       listid: 'ip-country-chart-SE',
-      name: 'Sweden'
+      name: 'Sweden',
+      author: 'shazam.com'
     },
     {
       key: 38,
       id: 'SG',
       listid: 'ip-country-chart-SG',
-      name: 'Singapore'
+      name: 'Singapore',
+      author: 'shazam.com'
     },
     {
       key: 39,
       id: 'BY',
       listid: 'ip-country-chart-BY',
-      name: 'Belarus'
+      name: 'Belarus',
+      author: 'shazam.com'
     },
     {
       key: 40,
       id: 'GB',
       listid: 'ip-country-chart-GB',
-      name: 'United Kingdom'
+      name: 'United Kingdom',
+      author: 'shazam.com'
     },
     {
       key: 41,
       id: 'CA',
       listid: 'ip-country-chart-CA',
-      name: 'Canada'
+      name: 'Canada',
+      author: 'shazam.com'
     },
     {
       key: 42,
       id: 'CH',
       listid: 'ip-country-chart-CH',
-      name: 'Switzerland'
+      name: 'Switzerland',
+      author: 'shazam.com'
     },
     {
       key: 43,
       id: 'KR',
       listid: 'ip-country-chart-KR',
-      name: 'South Korea'
+      name: 'South Korea',
+      author: 'shazam.com'
     },
-    { key: 44, id: 'CL', listid: 'ip-country-chart-CL', name: 'Chile' },
+    {
+      key: 44,
+      id: 'CL',
+      listid: 'ip-country-chart-CL',
+      name: 'Chile',
+      author: 'shazam.com'
+    },
     {
       key: 45,
       id: 'GR',
       listid: 'ip-country-chart-GR',
-      name: 'Greece'
+      name: 'Greece',
+      author: 'shazam.com'
     },
-    { key: 46, id: 'CN', listid: 'ip-country-chart-CN', name: 'China' },
+    {
+      key: 46,
+      id: 'CN',
+      listid: 'ip-country-chart-CN',
+      name: 'China',
+      author: 'shazam.com'
+    },
     {
       key: 47,
       id: 'CO',
       listid: 'ip-country-chart-CO',
-      name: 'Colombia'
+      name: 'Colombia',
+      author: 'shazam.com'
     },
     {
       key: 48,
       id: 'KZ',
       listid: 'ip-country-chart-KZ',
-      name: 'Kazakhstan'
+      name: 'Kazakhstan',
+      author: 'shazam.com'
     },
     {
       key: 49,
       id: 'CR',
       listid: 'ip-country-chart-CR',
-      name: 'Costa Rica'
+      name: 'Costa Rica',
+      author: 'shazam.com'
     },
     {
       key: 50,
       id: 'TH',
       listid: 'ip-country-chart-TH',
-      name: 'Thailand'
+      name: 'Thailand',
+      author: 'shazam.com'
     },
-    { key: 51, id: 'PE', listid: 'ip-country-chart-PE', name: 'Peru' },
+    {
+      key: 51,
+      id: 'PE',
+      listid: 'ip-country-chart-PE',
+      name: 'Peru',
+      author: 'shazam.com'
+    },
     {
       key: 52,
       id: 'CZ',
       listid: 'ip-country-chart-CZ',
-      name: 'Czechia'
+      name: 'Czechia',
+      author: 'shazam.com'
     },
     {
       key: 53,
       id: 'PL',
       listid: 'ip-country-chart-PL',
-      name: 'Poland'
+      name: 'Poland',
+      author: 'shazam.com'
     },
     {
       key: 54,
       id: 'TR',
       listid: 'ip-country-chart-TR',
-      name: 'Turkey'
+      name: 'Turkey',
+      author: 'shazam.com'
     }
   ],
   [
@@ -304,109 +403,127 @@ const global_genres = [
       key: 1,
       id: 'global-1',
       listid: 'genre-global-chart-1',
-      name: 'Pop'
+      name: 'Pop',
+      author: 'shazam.com'
     },
     {
       key: 2,
       id: 'global-2',
       listid: 'genre-global-chart-2',
-      name: 'Hip-Hop/Rap'
+      name: 'Hip-Hop/Rap',
+      author: 'shazam.com'
     },
     {
       key: 3,
       id: 'global-3',
       listid: 'genre-global-chart-3',
-      name: 'Dance'
+      name: 'Dance',
+      author: 'shazam.com'
     },
     {
       key: 4,
       id: 'global-4',
       listid: 'genre-global-chart-4',
-      name: 'Electronic'
+      name: 'Electronic',
+      author: 'shazam.com'
     },
     {
       key: 5,
       id: 'global-5',
       listid: 'genre-global-chart-5',
-      name: 'R&B/Soul'
+      name: 'R&B/Soul',
+      author: 'shazam.com'
     },
     {
       key: 6,
       id: 'global-6',
       listid: 'genre-global-chart-6',
-      name: 'Alternative'
+      name: 'Alternative',
+      author: 'shazam.com'
     },
     {
       key: 7,
       id: 'global-7',
       listid: 'genre-global-chart-7',
-      name: 'Rock'
+      name: 'Rock',
+      author: 'shazam.com'
     },
     {
       key: 8,
       id: 'global-8',
       listid: 'genre-global-chart-8',
-      name: 'Latin'
+      name: 'Latin',
+      author: 'shazam.com'
     },
     {
       key: 9,
       id: 'global-9',
       listid: 'genre-global-chart-9',
-      name: 'Film, TV & Stage'
+      name: 'Film, TV & Stage',
+      author: 'shazam.com'
     },
     {
       key: 10,
       id: 'global-10',
       listid: 'genre-global-chart-10',
-      name: 'Country'
+      name: 'Country',
+      author: 'shazam.com'
     },
     {
       key: 11,
       id: 'global-11',
       listid: 'genre-global-chart-11',
-      name: 'AfroBeats'
+      name: 'AfroBeats',
+      author: 'shazam.com'
     },
     {
       key: 12,
       id: 'global-12',
       listid: 'genre-global-chart-12',
-      name: 'Worldwide'
+      name: 'Worldwide',
+      author: 'shazam.com'
     },
     {
       key: 13,
       id: 'global-13',
       listid: 'genre-global-chart-13',
-      name: 'Reggae/Dancehall'
+      name: 'Reggae/Dancehall',
+      author: 'shazam.com'
     },
     {
       key: 14,
       id: 'global-14',
       listid: 'genre-global-chart-14',
-      name: 'House'
+      name: 'House',
+      author: 'shazam.com'
     },
     {
       key: 15,
       id: 'global-15',
       listid: 'genre-global-chart-15',
-      name: 'K-Pop'
+      name: 'K-Pop',
+      author: 'shazam.com'
     },
     {
       key: 16,
       id: 'global-16',
       listid: 'genre-global-chart-16',
-      name: 'French Pop'
+      name: 'French Pop',
+      author: 'shazam.com'
     },
     {
       key: 17,
       id: 'global-17',
       listid: 'genre-global-chart-17',
-      name: 'Singer/Songwriter'
+      name: 'Singer/Songwriter',
+      author: 'shazam.com'
     },
     {
       key: 18,
       id: 'global-18',
       listid: 'genre-global-chart-18',
-      name: 'Regional Mexicano'
+      name: 'Regional Mexicano',
+      author: 'shazam.com'
     }
   ]
 ];
@@ -414,4 +531,19 @@ export async function Data(){
 	return global_genres;
 }
 
+export async function AllData(){
+  let c=global_genres[0];
+  let g=global_genres[1];
+  function newData(a){
+    a.map((i)=>{
+      i.list=ListDemo;
+    });
+  };
+  newData(c);
+  newData(g);
+  let data=[];
+  data.push(c);
+  data.push(g);
+  return data;
+}
 

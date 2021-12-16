@@ -1,84 +1,9 @@
-import {Data} from '../dummy-data';
-const data=Data();
-export async function getData(){
-	return data;
+import {AllData} from '../dummy-data';
+
+export async function getAllData(){
+  const Alldata=await AllData();
+  return Alldata;
 }
-
-
-/*
-export async function getAllEvents() {
-  const url='https://shazam.p.rapidapi.com/charts/track';
-  
-  var options = {
-    method: 'GET',
-    params: {locale: 'en-US', pageSize: '20', startFrom: '0'},
-    headers: {
-      'x-rapidapi-host': 'shazam.p.rapidapi.com',
-      'x-rapidapi-key': '7abbb29ad4mshc86069389916bbep133ad3jsn2c0889cdaa53'
-    }
-  };
-  const response = await fetch(url,options);
-  const data = await response.json();
-  const cdata=data.tracks;
-  const events = [];
-
-  for (const k in cdata) {
-    let image='';
-    if (cdata[k].images.coverarthq) {
-      image=cdata[k].images.coverarthq;
-    };
-    const key=parseInt(k)+1;
-    events.push({
-      key:key,
-      id:cdata[k].key,
-      subtitle:cdata[k].subtitle,
-      title:cdata[k].title,
-      url:cdata[k].url,
-      image:image
-    });
-  }
-
-  return events;
-}
-*/
-
-/*
-export async function getAllEvents() {
-  const url='https://shazam.p.rapidapi.com/charts/list';
-  var options = {
-    method: 'GET',
-    headers: {
-      'x-rapidapi-host': 'shazam.p.rapidapi.com',
-      'x-rapidapi-key': '7abbb29ad4mshc86069389916bbep133ad3jsn2c0889cdaa53'
-    }
-  };
-  const response = await fetch(url,options);
-  const data = await response.json();
-  const cdata1=data.countries;
-  const cdata2=data.global.genres;
-  const events1 =listdata(cdata1);
-  const events2 =listdata(cdata2);
-  const events=[];
-  events.push(events1);
-  events.push(events2);
-  console.log(events);
-
-  function listdata(cdata) {
-    let events = [];
-    for (const k in cdata) {
-      const key=parseInt(k)+1;
-      events.push({
-        key:key,
-        id:cdata[k].id,
-        listid:cdata[k].listid,
-        name:cdata[k].name
-      });
-    }
-    return events;
-  }
-  return events;
-}
-*/
 
 export async function getFeaturedEvents() {
   const allEvents = await getAllEvents();
@@ -86,8 +11,8 @@ export async function getFeaturedEvents() {
 }
 
 export async function getEventById(id) {
-  const allEvents = await getAllEvents();
-  return allEvents.find((event) => event.id === id);
+  const Alldata=await getAllData();
+  return Alldata[0].find((event) => event.listid === id)||Alldata[1].find((event) => event.listid === id);
 }
 
 export async function getFilteredEvents(dateFilter) {

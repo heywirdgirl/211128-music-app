@@ -8,9 +8,9 @@ function ShowList(props) {
       {lists.map((list) => (
         <ShowListsItem
           key={list.id}
-          number={list.key}
           listid={list.listid}
       	  name= {list.name}
+          author={list.author}
         />
       ))}
     </ul>

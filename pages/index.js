@@ -1,8 +1,9 @@
-import { getData } from '../helpers/api-util';
+import {Data} from '../dummy-data';
+//import { getAlldata } from '../../helpers/api-util';
 import ShowLists from '../components/show-lists/show-lists';
 
 function HomePage(props) {
-  const data=props.events;
+  const {data}=props;
   const c=data[0];
   const g=data[1];
   return (
@@ -12,15 +13,14 @@ function HomePage(props) {
     </>
   );
 }
-
 export async function getStaticProps() {
-  const featuredEvents = await getData();
-
+  const data= await Data();
+  
   return {
     props: {
-      events: featuredEvents
+      data:data
     },
-    revalidate: 1800
+    revalidate: 518400
   }
 }
 
