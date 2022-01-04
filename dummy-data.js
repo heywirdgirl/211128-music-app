@@ -14,6 +14,53 @@ const ListDemo = [
     title: 'Cold Heart (PNAU Remix)',
     url: 'https://www.shazam.com/track/579595745/cold-heart-pnau-remix',                                                  
     image: 'https://is2-ssl.mzstatic.com/image/thumb/Music126/v4/db/29/07/db290719-0123-4b57-8593-426925c454ba/21UMGIM74865.rgb.jpg/400x400cc.jpg'                                     
+  },{
+    key: 1,
+    id: '580442939',
+    subtitle: 'Acraze Feat. Cherish',
+    title: 'Do It To It',
+    url: 'https://www.shazam.com/track/580442939/do-it-to-it',
+    image: 'https://is3-ssl.mzstatic.com/image/thumb/Music125/v4/3b/da/58/3bda58c3-4cb9-b30d-b455-035010707df9/21UMGIM70915.rgb.jpg/400x400cc.jpg'                                     
+  },
+  {
+    key: 2,
+    id: '579595745',
+    subtitle: 'Elton John & Dua Lipa',
+    title: 'Cold Heart (PNAU Remix)',
+    url: 'https://www.shazam.com/track/579595745/cold-heart-pnau-remix',                                                  
+    image: 'https://is2-ssl.mzstatic.com/image/thumb/Music126/v4/db/29/07/db290719-0123-4b57-8593-426925c454ba/21UMGIM74865.rgb.jpg/400x400cc.jpg'                                     
+  },
+  {
+    key: 1,
+    id: '580442939',
+    subtitle: 'Acraze Feat. Cherish',
+    title: 'Do It To It',
+    url: 'https://www.shazam.com/track/580442939/do-it-to-it',
+    image: 'https://is3-ssl.mzstatic.com/image/thumb/Music125/v4/3b/da/58/3bda58c3-4cb9-b30d-b455-035010707df9/21UMGIM70915.rgb.jpg/400x400cc.jpg'                                     
+  },
+  {
+    key: 2,
+    id: '579595745',
+    subtitle: 'Elton John & Dua Lipa',
+    title: 'Cold Heart (PNAU Remix)',
+    url: 'https://www.shazam.com/track/579595745/cold-heart-pnau-remix',                                                  
+    image: 'https://is2-ssl.mzstatic.com/image/thumb/Music126/v4/db/29/07/db290719-0123-4b57-8593-426925c454ba/21UMGIM74865.rgb.jpg/400x400cc.jpg'                                     
+  },
+  {
+    key: 1,
+    id: '580442939',
+    subtitle: 'Acraze Feat. Cherish',
+    title: 'Do It To It',
+    url: 'https://www.shazam.com/track/580442939/do-it-to-it',
+    image: 'https://is3-ssl.mzstatic.com/image/thumb/Music125/v4/3b/da/58/3bda58c3-4cb9-b30d-b455-035010707df9/21UMGIM70915.rgb.jpg/400x400cc.jpg'                                     
+  },
+  {
+    key: 2,
+    id: '579595745',
+    subtitle: 'Elton John & Dua Lipa',
+    title: 'Cold Heart (PNAU Remix)',
+    url: 'https://www.shazam.com/track/579595745/cold-heart-pnau-remix',                                                  
+    image: 'https://is2-ssl.mzstatic.com/image/thumb/Music126/v4/db/29/07/db290719-0123-4b57-8593-426925c454ba/21UMGIM74865.rgb.jpg/400x400cc.jpg'                                     
   }
 ];
 

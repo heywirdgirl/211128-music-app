@@ -1,5 +1,5 @@
 import React from "react";
-
+import Link from 'next/link';
 function MainHeader() {
   const [navbarOpen, setNavbarOpen] = React.useState(false);
   let cssMenu="w-full flex-grow lg:flex lg:items-center lg:w-auto mt-2 lg:mt-0 bg-white lg:bg-transparent text-black p-4 lg:p-0 z-20"+(navbarOpen ? " flex" : " hidden");
@@ -9,6 +9,7 @@ function MainHeader() {
   <div className="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 py-2">
     
     <div className="pl-4 flex items-center">
+    <Link href='/'>
       <a className="toggleColour text-white no-underline hover:no-underline font-bold text-2xl lg:text-4xl" href="#">
         <svg className="h-8 fill-current inline" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512.005 512.005">
           <rect fill="#2a2a31" x="16.539" y="425.626" width="479.767" height="50.502" transform="matrix(1,0,0,1,0,0)" />
@@ -16,6 +17,7 @@ function MainHeader() {
         </svg>
         LANDING
       </a>
+     </Link> 
     </div>
 
     <div className="block lg:hidden pr-4">
@@ -37,13 +39,19 @@ function MainHeader() {
     >
       <ul className="lg:flex justify-end flex-1 items-center">
         <li className="mr-3">
+        <Link href='#'>
           <a className="inline-block py-2 px-4 text-black font-bold hover:text-blue-800" href="#">Active</a>
+        </Link>
         </li>
         <li className="mr-3">
+        <Link href='#'>
           <a className="inline-block text-black hover:text-blue-800 py-2 px-4" href="#">link</a>
+        </Link>
         </li>
         <li className="mr-3">
+        <Link href='#'>
           <a className="inline-block text-black hover:text-blue-800 py-2 px-4" href="#">link</a>
+        </Link>
         </li>
       </ul>
     </div>

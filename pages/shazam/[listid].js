@@ -1,26 +1,38 @@
 import { Fragment } from 'react';
-import {useRouter} from 'next/router'
-import { getEventById } from '../../helpers/api-util';
-import { getAllData } from '../../helpers/api-util';
+import { getEventById,getAllData } from '../../helpers/api-util';
 function EventDetailPage(props) {
-  const r=useRouter();
-  const listId=r.query.listid;
-  const event = getEventById(listId);
-  //const event=getAllData();
-  console.log(event);
+  const event = props.selectedEvent;
+  const {key,id,listid,name,author,list}=event;
   if (!event) {
     return (
-      <div className="center">
+      <div>
         <p>Loading...</p>
       </div>
     );
   }
-
   return (
     <Fragment>
-       <p>is {event.name}</p>
+       <p>{name}</p>
     </Fragment>
   );
 }
 
+export async function getStaticProps(context) {
+  const listid = context.params.listid;
+  const list = await getEventById(listid);
+  return {
+    props: {
+      selectedEvent: list
+    },
+    revalidate: 518400
+  };
+}
+export async function getStaticPaths() {
+  const lists = await getAllData();
+  const paths = lists.map(list => ({ params: { listid: list.listid } }));
+  return {
+    paths: paths,
+    fallback: 'blocking'
+  };
+}
 export default EventDetailPage;
