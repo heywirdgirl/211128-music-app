@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { FaFacebook, FaStore } from "react-icons/fa"; // Import Facebook & Shopee icons
 
 export default function Header() {
   return (
@@ -20,11 +21,11 @@ export default function Header() {
 
         {/* Right - Social Links */}
         <div className="flex gap-4 mt-2 md:mt-0">
-          <Link href="https://facebook.com/" target="_blank" className="hover:underline">
-            Facebook
+          <Link href="https://facebook.com/yourpage" target="_blank" className="flex items-center gap-1 hover:underline">
+            <FaFacebook size={20} /> Facebook
           </Link>
-          <Link href="https://shopee.com/" target="_blank" className="hover:underline">
-            Shopee
+          <Link href="https://shopee.com/yourstore" target="_blank" className="flex items-center gap-1 hover:underline">
+            <FaStore size={20} /> Shopee
           </Link>
         </div>
 
