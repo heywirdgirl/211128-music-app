@@ -1,0 +1,144 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Classic Baseball Cap",
+      "price": 24.99,
+      "description": "Adjustable cotton baseball cap with curved visor",
+      "image": "/images/hat.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Beanie Winter Hat",
+      "price": 19.99,
+      "description": "Warm acrylic knit beanie for cold weather",
+      "image": "/images/hat.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Panama Summer Hat",
+      "price": 34.99,
+      "description": "Lightweight breathable straw hat with black band",
+      "image": "/images/hat.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Fedora Fashion Hat",
+      "price": 39.99,
+      "description": "Wool felt fedora with leather band",
+      "image": "/images/hat.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Bucket Hat Outdoor",
+      "price": 27.99,
+      "description": "Water-resistant nylon bucket hat with UPF protection",
+      "image": "/images/hat.jpg"
+    },
+    {
+      "id": 6,
+      "name": "Trucker Mesh Cap",
+      "price": 22.99,
+      "description": "Classic mesh-back trucker hat with foam front",
+      "image": "/images/hat.jpg"
+    },
+    {
+      "id": 7,
+      "name": "Golf Visor",
+      "price": 18.99,
+      "description": "Performance visor with moisture-wicking fabric",
+      "image": "/images/hat.jpg"
+    },
+    {
+      "id": 8,
+      "name": "Beret French Style",
+      "price": 29.99,
+      "description": "Authentic wool French beret in multiple colors",
+      "image": "/images/hat.jpg"
+    },
+    {
+      "id": 9,
+      "name": "Cowboy Leather Hat",
+      "price": 44.99,
+      "description": "Genuine leather western-style cowboy hat",
+      "image": "/images/hat.jpg"
+    },
+    {
+      "id": 10,
+      "name": "Newsboy Cap",
+      "price": 31.99,
+      "description": "Vintage-style eight-panel newsboy cap",
+      "image": "/images/hat.jpg"
+    },
+    {
+      "id": 11,
+      "name": "Military Boonie Hat",
+      "price": 26.99,
+      "description": "Camouflage boonie hat with chin strap",
+      "image": "/images/hat.jpg"
+    },
+    {
+      "id": 12,
+      "name": "Sun Protection Hat",
+      "price": 32.99,
+      "description": "Wide-brim sun hat with UPF 50+ rating",
+      "image": "/images/hat.jpg"
+    },
+    {
+      "id": 13,
+      "name": "Winter Trapper Hat",
+      "price": 37.99,
+      "description": "Faux fur-lined trapper hat with ear flaps",
+      "image": "/images/hat.jpg"
+    },
+    {
+      "id": 14,
+      "name": "Flat Cap Driving",
+      "price": 28.99,
+      "description": "Stylish tweed flat cap for men",
+      "image": "/images/hat.jpg"
+    },
+    {
+      "id": 15,
+      "name": "Fashion Bucket Hat",
+      "price": 23.99,
+      "description": "Corduroy bucket hat with embroidered logo",
+      "image": "/images/hat.jpg"
+    },
+    {
+      "id": 16,
+      "name": "Fisherman's Hat",
+      "price": 21.99,
+      "description": "Water-resistant nylon hat with neck flap",
+      "image": "/images/hat.jpg"
+    },
+    {
+      "id": 17,
+      "name": "Baseball Cap Pro",
+      "price": 24.99,
+      "description": "Performance fabric with sweat-wicking band",
+      "image": "/images/hat.jpg"
+    },
+    {
+      "id": 18,
+      "name": "Garden Party Hat",
+      "price": 35.99,
+      "description": "Decorative wide-brim hat with floral accents",
+      "image": "/images/hat.jpg"
+    },
+    {
+      "id": 19,
+      "name": "Knit Pom Beanie",
+      "price": 17.99,
+      "description": "Chunky knit beanie with faux fur pom",
+      "image": "/images/hat.jpg"
+    },
+    {
+      "id": 20,
+      "name": "Gatsby Summer Hat",
+      "price": 39.99,
+      "description": "Straw hat with decorative band for summer events",
+      "image": "/images/hat.jpg"
+    }
+  ]
+}

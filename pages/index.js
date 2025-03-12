@@ -1,33 +1,14 @@
-import fs from "fs";
-import path from "path";
-import Link from "next/link";
+import Link from 'next/link';
 
-export async function getStaticProps() {
-  const filePath = path.join(process.cwd(), "public/products.json");
-  const jsonData = fs.readFileSync(filePath, "utf-8");
-  const products = JSON.parse(jsonData);
-
-  return {
-    props: { products },
-  };
-}
-
-export default function Home({ products }) {
+export default function Home() {
   return (
-    <div className="container mx-auto p-4">
-      <h1 className="text-2xl font-bold text-center mb-4">Simple Shop</h1>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-        {products.map((product) => (
-          <div key={product.id} className="border p-4 rounded-lg shadow-md">
-            <img src={product.image} alt={product.name} className="w-full h-40 object-cover rounded-md" />
-            <h2 className="text-lg font-semibold mt-2">{product.name}</h2>
-            <p className="text-gray-600">${product.price.toFixed(2)}</p>
-            <Link href={`/products/${product.id}`} className="text-blue-500 hover:underline mt-2 block">
-              View Details
-            </Link>
-          </div>
-        ))}
-      </div>
+    <div className="container mx-auto px-4 py-8 text-center">
+      <h1 className="text-4xl font-bold mb-4">Welcome to Our Shop</h1>
+      <Link href="/products">
+        <a className="bg-blue-600 text-white px-6 py-3 rounded hover:bg-blue-700 transition-colors">
+          View Products
+        </a>
+      </Link>
     </div>
   );
 }
