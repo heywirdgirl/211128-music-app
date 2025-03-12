@@ -16,8 +16,8 @@ export default function Header() {
 
         {/* Right - Social Links */}
         <div className="flex gap-4 mt-2 md:mt-0">
-          <a href="https://facebook.com/yourpage" target="_blank" className="hover:underline">Facebook</a>
-          <a href="https://shopee.com/yourstore" target="_blank" className="hover:underline">Shopee</a>
+          <a href="https://facebook.com/" target="_blank" className="hover:underline">Facebook</a>
+          <a href="https://shopee.com/" target="_blank" className="hover:underline">Shopee</a>
         </div>
 
       </div>
