@@ -1,14 +1,24 @@
-import Link from 'next/link';
+import fs from "fs";
+import path from "path";
+import ProductCard from "../components/ProductCard";
 
-export default function Home() {
+export async function getStaticProps() {
+  const filePath = path.join(process.cwd(), "data", "hats.json");
+  const jsonData = fs.readFileSync(filePath, "utf8");
+  const hats = JSON.parse(jsonData);
+
+  return { props: { hats } };
+}
+
+export default function Home({ hats }) {
   return (
-    <div className="container mx-auto px-4 py-8 text-center">
-      <h1 className="text-4xl font-bold mb-4">Welcome to Our Shop</h1>
-      <Link href="/products">
-        <a className="bg-blue-600 text-white px-6 py-3 rounded hover:bg-blue-700 transition-colors">
-          View Products
-        </a>
-      </Link>
+    <div className="container mx-auto p-4">
+      <h1 className="text-3xl font-bold text-center mb-6">Hat Store</h1>
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        {hats.map((hat) => (
+          <ProductCard key={hat.id} hat={hat} />
+        ))}
+      </div>
     </div>
   );
 }
