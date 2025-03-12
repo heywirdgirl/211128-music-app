@@ -1,29 +1,23 @@
-import {Data} from '../dummy-data';
-//import { getAlldata } from '../../helpers/api-util';
-import ShowLists from '../components/show-lists/show-lists';
+import { useState, useEffect } from "react";
+import ProductCard from "../components/ProductCard";
 
-function HomePage(props) {
-  const {data}=props;
-  const c=data[0];
-  const g=data[1];
+export default function Home() {
+  const [products, setProducts] = useState([]);
+
+  useEffect(() => {
+    fetch("/products.json")
+      .then((res) => res.json())
+      .then((data) => setProducts(data));
+  }, []);
+
   return (
-    <>
-        <ShowLists lists={g} />
-        <ShowLists lists={c} />
-    </>
+    <div className="container mx-auto p-4">
+      <h1 className="text-2xl font-bold text-center mb-4">Simple Shop</h1>
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+        {products.map((product) => (
+          <ProductCard key={product.id} product={product} />
+        ))}
+      </div>
+    </div>
   );
 }
-export async function getStaticProps() {
-  const data= await Data();
-  
-  return {
-    props: {
-      data:data
-    },
-    revalidate: 518400
-  }
-}
-
-export default HomePage;
-
-
