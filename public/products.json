@@ -1,142 +1,142 @@
 [
   {
     "id": 1,
-    "name": "Sneakers",
+    "name": "Classic Baseball Hat",
     "image": "/images/hat.jpg",
-    "price": 59.99,
-    "description": "Comfortable running sneakers with breathable mesh design"
+    "price": 19.99,
+    "description": "A stylish and comfortable classic baseball hat, perfect for any occasion."
   },
   {
     "id": 2,
-    "name": "Hat",
+    "name": "Vintage Snapback Cap",
     "image": "/images/hat.jpg",
-    "price": 19.99,
-    "description": "Classic baseball cap with adjustable strap"
+    "price": 24.99,
+    "description": "Retro-style snapback cap with adjustable fit and durable material."
   },
   {
     "id": 3,
-    "name": "Wallet",
+    "name": "Outdoor Sun Hat",
     "image": "/images/hat.jpg",
     "price": 29.99,
-    "description": "Slim leather wallet with RFID protection"
+    "description": "Wide-brim sun hat to keep you cool and protected during outdoor adventures."
   },
   {
     "id": 4,
-    "name": "T-Shirt",
+    "name": "Winter Beanie Hat",
     "image": "/images/hat.jpg",
-    "price": 24.99,
-    "description": "100% Cotton crewneck t-shirt in assorted colors"
+    "price": 14.99,
+    "description": "Soft and warm knitted beanie hat, perfect for winter seasons."
   },
   {
     "id": 5,
-    "name": "Jeans",
+    "name": "Cotton Bucket Hat",
     "image": "/images/hat.jpg",
-    "price": 69.99,
-    "description": "Slim-fit denim jeans with stretch fabric"
+    "price": 22.99,
+    "description": "Lightweight and breathable bucket hat, great for casual outings."
   },
   {
     "id": 6,
-    "name": "Backpack",
+    "name": "Premium Fedora Hat",
     "image": "/images/hat.jpg",
-    "price": 89.99,
-    "description": "Water-resistant backpack with laptop compartment"
+    "price": 34.99,
+    "description": "Classic fedora hat made with premium materials for a sophisticated look."
   },
   {
     "id": 7,
-    "name": "Sunglasses",
+    "name": "Camo Hunting Hat",
     "image": "/images/hat.jpg",
-    "price": 39.99,
-    "description": "UV protection sunglasses with polarized lenses"
+    "price": 18.99,
+    "description": "Durable camouflage hunting hat for outdoor and tactical use."
   },
   {
     "id": 8,
-    "name": "Watch",
+    "name": "Performance Sports Cap",
     "image": "/images/hat.jpg",
-    "price": 149.99,
-    "description": "Stainless steel analog watch with date display"
+    "price": 21.99,
+    "description": "Breathable and sweat-wicking sports cap for athletic activities."
   },
   {
     "id": 9,
-    "name": "Belt",
+    "name": "Straw Beach Hat",
     "image": "/images/hat.jpg",
-    "price": 34.99,
-    "description": "Genuine leather belt with brushed metal buckle"
+    "price": 27.99,
+    "description": "Stylish and lightweight straw hat, perfect for summer beach days."
   },
   {
     "id": 10,
-    "name": "Scarf",
+    "name": "Adjustable Trucker Cap",
     "image": "/images/hat.jpg",
-    "price": 29.99,
-    "description": "Wool-blend winter scarf in plaid pattern"
+    "price": 16.99,
+    "description": "Classic mesh trucker cap with adjustable snap closure for a perfect fit."
   },
   {
     "id": 11,
-    "name": "Gloves",
+    "name": "Stylish Cowboy Hat",
     "image": "/images/hat.jpg",
-    "price": 19.99,
-    "description": "Touchscreen-compatible knit gloves"
+    "price": 39.99,
+    "description": "Authentic cowboy hat made with durable materials for a western look."
   },
   {
     "id": 12,
-    "name": "Socks",
+    "name": "Casual Dad Hat",
     "image": "/images/hat.jpg",
-    "price": 12.99,
-    "description": "6-pack of cotton athletic socks"
+    "price": 15.99,
+    "description": "Simple and stylish dad hat for an everyday casual look."
   },
   {
     "id": 13,
-    "name": "Jacket",
+    "name": "Waterproof Hiking Hat",
     "image": "/images/hat.jpg",
-    "price": 129.99,
-    "description": "Waterproof windbreaker with hood"
+    "price": 26.99,
+    "description": "Lightweight, waterproof hiking hat designed for outdoor adventures."
   },
   {
     "id": 14,
-    "name": "Dress",
+    "name": "Classic Golf Cap",
     "image": "/images/hat.jpg",
-    "price": 79.99,
-    "description": "Knee-length summer dress with floral print"
+    "price": 23.99,
+    "description": "Perfect golf cap with UV protection and sweat-absorbing material."
   },
   {
     "id": 15,
-    "name": "Skirt",
+    "name": "Urban Hip-Hop Cap",
     "image": "/images/hat.jpg",
-    "price": 49.99,
-    "description": "Pleated midi skirt in various colors"
+    "price": 19.99,
+    "description": "Trendy hip-hop style cap that complements streetwear outfits."
   },
   {
     "id": 16,
-    "name": "Sandals",
+    "name": "Soft Fleece Beanie",
     "image": "/images/hat.jpg",
-    "price": 44.99,
-    "description": "Comfortable orthopedic sandals"
+    "price": 12.99,
+    "description": "Warm fleece beanie for maximum comfort in cold weather."
   },
   {
     "id": 17,
-    "name": "Necklace",
+    "name": "Lightweight Cycling Cap",
     "image": "/images/hat.jpg",
-    "price": 89.99,
-    "description": "Sterling silver pendant necklace"
+    "price": 17.99,
+    "description": "Designed for cyclists, lightweight and breathable for maximum comfort."
   },
   {
     "id": 18,
-    "name": "Earrings",
+    "name": "Reversible Fisherman Hat",
     "image": "/images/hat.jpg",
-    "price": 64.99,
-    "description": "14K gold hoop earrings"
+    "price": 20.99,
+    "description": "Two-in-one reversible fisherman hat with dual-color design."
   },
   {
     "id": 19,
-    "name": "Bracelet",
+    "name": "Stylish Military Cap",
     "image": "/images/hat.jpg",
-    "price": 39.99,
-    "description": "Adjustable beaded friendship bracelet"
+    "price": 22.99,
+    "description": "Military-style cap with sturdy build and classic design."
   },
   {
     "id": 20,
-    "name": "Ring",
+    "name": "Kids' Fun Cap",
     "image": "/images/hat.jpg",
-    "price": 99.99,
-    "description": "Tungsten carbide wedding band"
+    "price": 14.99,
+    "description": "Colorful and comfortable cap designed for kids of all ages."
   }
 ]
