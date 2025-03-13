@@ -1,5 +1,142 @@
 [
-  { "id": 1, "name": "Sneakers", "image": "/images/hat.jpg", "price": 49.99 },
-  { "id": 2, "name": "Hat", "image": "/images/hat.jpg", "price": 19.99 },
-  { "id": 3, "name": "Wallet", "image": "/images/hat.jpg", "price": 29.99 }
+  {
+    "id": 1,
+    "name": "Sneakers",
+    "image": "/images/hat.jpg",
+    "price": 59.99,
+    "description": "Comfortable running sneakers with breathable mesh design"
+  },
+  {
+    "id": 2,
+    "name": "Hat",
+    "image": "/images/hat.jpg",
+    "price": 19.99,
+    "description": "Classic baseball cap with adjustable strap"
+  },
+  {
+    "id": 3,
+    "name": "Wallet",
+    "image": "/images/hat.jpg",
+    "price": 29.99,
+    "description": "Slim leather wallet with RFID protection"
+  },
+  {
+    "id": 4,
+    "name": "T-Shirt",
+    "image": "/images/hat.jpg",
+    "price": 24.99,
+    "description": "100% Cotton crewneck t-shirt in assorted colors"
+  },
+  {
+    "id": 5,
+    "name": "Jeans",
+    "image": "/images/hat.jpg",
+    "price": 69.99,
+    "description": "Slim-fit denim jeans with stretch fabric"
+  },
+  {
+    "id": 6,
+    "name": "Backpack",
+    "image": "/images/hat.jpg",
+    "price": 89.99,
+    "description": "Water-resistant backpack with laptop compartment"
+  },
+  {
+    "id": 7,
+    "name": "Sunglasses",
+    "image": "/images/hat.jpg",
+    "price": 39.99,
+    "description": "UV protection sunglasses with polarized lenses"
+  },
+  {
+    "id": 8,
+    "name": "Watch",
+    "image": "/images/hat.jpg",
+    "price": 149.99,
+    "description": "Stainless steel analog watch with date display"
+  },
+  {
+    "id": 9,
+    "name": "Belt",
+    "image": "/images/hat.jpg",
+    "price": 34.99,
+    "description": "Genuine leather belt with brushed metal buckle"
+  },
+  {
+    "id": 10,
+    "name": "Scarf",
+    "image": "/images/hat.jpg",
+    "price": 29.99,
+    "description": "Wool-blend winter scarf in plaid pattern"
+  },
+  {
+    "id": 11,
+    "name": "Gloves",
+    "image": "/images/hat.jpg",
+    "price": 19.99,
+    "description": "Touchscreen-compatible knit gloves"
+  },
+  {
+    "id": 12,
+    "name": "Socks",
+    "image": "/images/hat.jpg",
+    "price": 12.99,
+    "description": "6-pack of cotton athletic socks"
+  },
+  {
+    "id": 13,
+    "name": "Jacket",
+    "image": "/images/hat.jpg",
+    "price": 129.99,
+    "description": "Waterproof windbreaker with hood"
+  },
+  {
+    "id": 14,
+    "name": "Dress",
+    "image": "/images/hat.jpg",
+    "price": 79.99,
+    "description": "Knee-length summer dress with floral print"
+  },
+  {
+    "id": 15,
+    "name": "Skirt",
+    "image": "/images/hat.jpg",
+    "price": 49.99,
+    "description": "Pleated midi skirt in various colors"
+  },
+  {
+    "id": 16,
+    "name": "Sandals",
+    "image": "/images/hat.jpg",
+    "price": 44.99,
+    "description": "Comfortable orthopedic sandals"
+  },
+  {
+    "id": 17,
+    "name": "Necklace",
+    "image": "/images/hat.jpg",
+    "price": 89.99,
+    "description": "Sterling silver pendant necklace"
+  },
+  {
+    "id": 18,
+    "name": "Earrings",
+    "image": "/images/hat.jpg",
+    "price": 64.99,
+    "description": "14K gold hoop earrings"
+  },
+  {
+    "id": 19,
+    "name": "Bracelet",
+    "image": "/images/hat.jpg",
+    "price": 39.99,
+    "description": "Adjustable beaded friendship bracelet"
+  },
+  {
+    "id": 20,
+    "name": "Ring",
+    "image": "/images/hat.jpg",
+    "price": 99.99,
+    "description": "Tungsten carbide wedding band"
+  }
 ]

@@ -2,6 +2,7 @@ import fs from "fs";
 import path from "path";
 import { useRouter } from "next/router";
 import Head from "next/head";
+import Image from "next/image";
 import Header from "../../components/Header";
 
 export async function getStaticPaths() {
@@ -13,7 +14,7 @@ export async function getStaticPaths() {
     params: { id: product.id.toString() }
   }));
 
-  return { paths, fallback: true }; // Enable fallback for missing products
+  return { paths, fallback: true };
 }
 
 export async function getStaticProps({ params }) {
@@ -58,7 +59,9 @@ export default function ProductPage({ product }) {
       <Header />
       <div className="container mx-auto p-4">
         <h1 className="text-2xl font-bold">{product.name}</h1>
-        <img src={product.image} alt={product.name} className="w-full h-60 object-cover rounded-md mt-4" />
+        <div className="relative w-full h-60 mt-4">
+          <Image src={product.image} alt={product.name} layout="fill" objectFit="cover" className="rounded-md" />
+        </div>
         <p className="text-lg text-gray-600 mt-2">${product.price.toFixed(2)}</p>
       </div>
     </>
