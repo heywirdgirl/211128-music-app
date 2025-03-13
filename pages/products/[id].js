@@ -34,35 +34,26 @@ export default function ProductPage({ product }) {
 
   if (router.isFallback) return <p className="text-center mt-20 text-xl">Loading...</p>;
 
-  const jsonLd = {
-    "@context": "https://schema.org/",
-    "@type": "Product",
-    "name": product.name,
-    "image": product.image,
-    "description": `Buy ${product.name} for just $${product.price.toFixed(2)}.`,
-    "offers": {
-      "@type": "Offer",
-      "priceCurrency": "USD",
-      "price": product.price,
-      "availability": "https://schema.org/InStock",
-      "url": `https://yourwebsite.com/products/${product.id}`
-    }
-  };
-
   return (
     <>
       <Head>
         <title>{product.name} - Simple Shop</title>
         <meta name="description" content={`Buy ${product.name} for just $${product.price.toFixed(2)}.`} />
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       </Head>
       <Header />
-      <div className="container mx-auto p-4">
-        <h1 className="text-2xl font-bold">{product.name}</h1>
-        <div className="relative w-full h-60 mt-4">
-          <Image src={product.image} alt={product.name} layout="fill" objectFit="cover" className="rounded-md" />
+      <div className="container mx-auto px-4 py-8">
+        <div className="flex flex-col md:flex-row gap-6">
+          <div className="relative w-full md:w-1/2 h-72 md:h-96">
+            <Image src={product.image} alt={product.name} layout="fill" objectFit="cover" className="rounded-lg" />
+          </div>
+          <div className="md:w-1/2">
+            <h1 className="text-3xl font-bold">{product.name}</h1>
+            <p className="text-gray-600 text-lg mt-2">${product.price.toFixed(2)}</p>
+            <button className="mt-4 px-6 py-2 bg-green-500 text-white rounded-lg hover:bg-green-600 transition">
+              Buy Now
+            </button>
+          </div>
         </div>
-        <p className="text-lg text-gray-600 mt-2">${product.price.toFixed(2)}</p>
       </div>
     </>
   );
