@@ -38,7 +38,7 @@ export default function ProductPage({ product }) {
     <>
       <Head>
         <title>{product.name} - Simple Shop</title>
-        <meta name="description" content={`Buy ${product.name} for just $${product.price.toFixed(2)}.`} />
+        <meta name="description" content={product.description} />
       </Head>
       <Header />
       <div className="container mx-auto px-4 py-8">
@@ -48,8 +48,9 @@ export default function ProductPage({ product }) {
           </div>
           <div className="md:w-1/2">
             <h1 className="text-3xl font-bold">{product.name}</h1>
-            <p className="text-gray-600 text-lg mt-2">${product.price.toFixed(2)}</p>
-            <button className="mt-4 px-6 py-2 bg-green-500 text-white rounded-lg hover:bg-green-600 transition">
+            <p className="text-lg text-gray-800 font-semibold mt-2">${product.price.toFixed(2)}</p>
+            <p className="text-gray-600 text-md mt-4">{product.description}</p>
+            <button className="mt-6 px-6 py-2 bg-green-500 text-white rounded-lg hover:bg-green-600 transition">
               Buy Now
             </button>
           </div>
