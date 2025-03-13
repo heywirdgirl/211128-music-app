@@ -22,7 +22,7 @@ export default function Home({ products }) {
 >
   {/* DARK OVERLAY */}
   <div className="absolute inset-0 bg-black bg-opacity-50"></div>
-
+</div>
 
       
       <div className="container mx-auto px-4 py-8">
@@ -35,7 +35,7 @@ export default function Home({ products }) {
           ))}
         </div>
       </div>
-      </div>
+      
     </>
   );
 }
