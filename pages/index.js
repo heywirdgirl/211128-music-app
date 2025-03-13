@@ -8,7 +8,7 @@ export async function getStaticProps() {
   const jsonData = fs.readFileSync(filePath, "utf-8");
   const products = JSON.parse(jsonData);
 
-  return { props: { products } };
+  return { props: { products } }; // ✅ Ensure it returns all products
 }
 
 export default function Home({ products }) {
@@ -18,7 +18,7 @@ export default function Home({ products }) {
       <div className="container mx-auto px-4">
         <h1 className="text-3xl font-bold text-center my-6">Simple Shop</h1>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-          {products.map((product) => (
+          {products.map((product) => ( // ✅ Correctly maps all products
             <ProductCard key={product.id} product={product} />
           ))}
         </div>
